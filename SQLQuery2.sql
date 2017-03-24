@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[EventTable]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Name] VARCHAR(30) NOT NULL,
+	[Description] VARCHAR(50) NOT NULL,
+	[Place] VARCHAR(30) NOT NULL,
+	[Date] DATETIMEOFFSET (7) NOT NULL
+
+);
