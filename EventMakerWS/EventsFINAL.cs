@@ -6,10 +6,9 @@ namespace EventMakerWS
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("EventTable")]
-    public partial class EventTable
+    [Table("EventsFINAL")]
+    public partial class EventsFINAL
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         [Required]
@@ -24,6 +23,7 @@ namespace EventMakerWS
         [StringLength(30)]
         public string Place { get; set; }
 
-        public DateTimeOffset Date { get; set; }
+
+        public DateTime Date { get; set; }
     }
 }
