@@ -36,6 +36,7 @@ namespace EventMakerWS.Controllers
             return Ok(eventsFINAL);
         }
 
+
         // PUT: api/EventsFINALs/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutEventsFINAL(int id, EventsFINAL eventsFINAL)
